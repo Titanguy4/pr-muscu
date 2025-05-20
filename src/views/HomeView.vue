@@ -2,7 +2,7 @@
 import CountDown from '@/components/CountDown.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
-import HomeCompetitors from '@/components/CompetitorsList.vue'
+import CompetitorList from '@/components/competitors/CompetitorList.vue'
 import QuickPronoForm from '@/components/QuickPronoForm.vue'
 </script>
 
@@ -18,9 +18,7 @@ import QuickPronoForm from '@/components/QuickPronoForm.vue'
       />
     </div>
 
-    <div id="home-competitors-container">
-      <HomeCompetitors />
-    </div>
+    <CompetitorList />
 
     <div id="home-quickpronoform-container">
       <QuickPronoForm />
@@ -76,20 +74,13 @@ import QuickPronoForm from '@/components/QuickPronoForm.vue'
   transform: translateX(-50%);
 }
 
-#home-competitors-container {
-  margin: 100px auto;
-  background: rgba(0, 56, 32, 0.7);
-  border-radius: 8px;
-  padding: 60px 20px;
-}
-
 #home-quickpronoform-container {
   position: relative;
   left: 50%;
   right: 50%;
   width: 100vw;
   min-height: 50vh;
-  padding: 60px 40px;
+  padding: 150px 40px;
   background-color: var(--color-background);
   transform: translate(-50%);
   box-sizing: border-box;
